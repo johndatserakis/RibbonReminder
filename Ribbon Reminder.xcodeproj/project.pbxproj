@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B15AA2701A0C9CEB00BEF900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA26F1A0C9CEB00BEF900 /* AppDelegate.swift */; };
+		B15AA2721A0C9CEB00BEF900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA2711A0C9CEB00BEF900 /* ViewController.swift */; };
+		B15AA2751A0C9CEB00BEF900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15AA2731A0C9CEB00BEF900 /* Main.storyboard */; };
+		B15AA2861A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA2851A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift */; };
+		B1833C791A148C4300D99E5E /* RibbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1833C781A148C4300D99E5E /* RibbonViewController.swift */; };
+		B1833C971A15F39900D99E5E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1833C821A15DCE800D99E5E /* NotificationCenter.framework */; };
+		B1833C9C1A15F39900D99E5E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1833C9B1A15F39900D99E5E /* TodayViewController.swift */; };
+		B1833C9E1A15F39900D99E5E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1833C9D1A15F39900D99E5E /* MainInterface.storyboard */; };
+		B1833CA11A15F39900D99E5E /* Ribbons.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B1833C961A15F39900D99E5E /* Ribbons.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1AA05C51A11EFC000B677BC /* WawaTC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B1AA05C41A11EFC000B677BC /* WawaTC-Regular.otf */; };
+		B1CC312E1A21BE5300734BD6 /* Launch Screen New.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CC312D1A21BE5300734BD6 /* Launch Screen New.xib */; };
+		B1D8F4FE1A0E01D1003D4C3C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D8F4FD1A0E01D1003D4C3C /* SettingsViewController.swift */; };
+		B1E63BCA1A32CCFC00FDA396 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E63BC91A32CCFC00FDA396 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B15AA2801A0C9CEB00BEF900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15AA2621A0C9CEB00BEF900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B15AA2691A0C9CEB00BEF900;
+			remoteInfo = "Ribbon Reminder";
+		};
+		B1833C9F1A15F39900D99E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15AA2621A0C9CEB00BEF900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1833C951A15F39900D99E5E;
+			remoteInfo = Ribbons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1833C911A15DCE800D99E5E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1833CA11A15F39900D99E5E /* Ribbons.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B15AA26A1A0C9CEB00BEF900 /* Ribbon Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ribbon Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15AA26E1A0C9CEB00BEF900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15AA26F1A0C9CEB00BEF900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B15AA2711A0C9CEB00BEF900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B15AA2741A0C9CEB00BEF900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B15AA27F1A0C9CEB00BEF900 /* Ribbon ReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ribbon ReminderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15AA2841A0C9CEB00BEF900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15AA2851A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ribbon_ReminderTests.swift; sourceTree = "<group>"; };
+		B1833C781A148C4300D99E5E /* RibbonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RibbonViewController.swift; sourceTree = "<group>"; };
+		B1833C821A15DCE800D99E5E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B1833C961A15F39900D99E5E /* Ribbons.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Ribbons.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1833C9A1A15F39900D99E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1833C9B1A15F39900D99E5E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B1833C9D1A15F39900D99E5E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		B1833CA51A15F49200D99E5E /* Ribbon Reminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Ribbon Reminder.entitlements"; sourceTree = "<group>"; };
+		B1833CA61A15F4DA00D99E5E /* Ribbons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ribbons.entitlements; sourceTree = "<group>"; };
+		B1AA05C41A11EFC000B677BC /* WawaTC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WawaTC-Regular.otf"; path = "../WawaTC-Regular.otf"; sourceTree = "<group>"; };
+		B1CC312D1A21BE5300734BD6 /* Launch Screen New.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen New.xib"; sourceTree = "<group>"; };
+		B1D8F4FD1A0E01D1003D4C3C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B1E63BC91A32CCFC00FDA396 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15AA2671A0C9CEB00BEF900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15AA27C1A0C9CEB00BEF900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1833C931A15F39900D99E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1833C971A15F39900D99E5E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B15AA2611A0C9CEB00BEF900 = {
+			isa = PBXGroup;
+			children = (
+				B1CC312D1A21BE5300734BD6 /* Launch Screen New.xib */,
+				B15AA26C1A0C9CEB00BEF900 /* Ribbon Reminder */,
+				B15AA2821A0C9CEB00BEF900 /* Ribbon ReminderTests */,
+				B1833C981A15F39900D99E5E /* Ribbons */,
+				B1833C811A15DCE800D99E5E /* Frameworks */,
+				B15AA26B1A0C9CEB00BEF900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B15AA26B1A0C9CEB00BEF900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15AA26A1A0C9CEB00BEF900 /* Ribbon Reminder.app */,
+				B15AA27F1A0C9CEB00BEF900 /* Ribbon ReminderTests.xctest */,
+				B1833C961A15F39900D99E5E /* Ribbons.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15AA26C1A0C9CEB00BEF900 /* Ribbon Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				B1833CA51A15F49200D99E5E /* Ribbon Reminder.entitlements */,
+				B15AA26F1A0C9CEB00BEF900 /* AppDelegate.swift */,
+				B15AA2711A0C9CEB00BEF900 /* ViewController.swift */,
+				B1833C781A148C4300D99E5E /* RibbonViewController.swift */,
+				B1D8F4FD1A0E01D1003D4C3C /* SettingsViewController.swift */,
+				B15AA2731A0C9CEB00BEF900 /* Main.storyboard */,
+				B1E63BC91A32CCFC00FDA396 /* Images.xcassets */,
+				B15AA26D1A0C9CEB00BEF900 /* Supporting Files */,
+			);
+			path = "Ribbon Reminder";
+			sourceTree = "<group>";
+		};
+		B15AA26D1A0C9CEB00BEF900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1AA05C41A11EFC000B677BC /* WawaTC-Regular.otf */,
+				B15AA26E1A0C9CEB00BEF900 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B15AA2821A0C9CEB00BEF900 /* Ribbon ReminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				B15AA2851A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift */,
+				B15AA2831A0C9CEB00BEF900 /* Supporting Files */,
+			);
+			path = "Ribbon ReminderTests";
+			sourceTree = "<group>";
+		};
+		B15AA2831A0C9CEB00BEF900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15AA2841A0C9CEB00BEF900 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1833C811A15DCE800D99E5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1833C821A15DCE800D99E5E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1833C981A15F39900D99E5E /* Ribbons */ = {
+			isa = PBXGroup;
+			children = (
+				B1833CA61A15F4DA00D99E5E /* Ribbons.entitlements */,
+				B1833C9B1A15F39900D99E5E /* TodayViewController.swift */,
+				B1833C9D1A15F39900D99E5E /* MainInterface.storyboard */,
+				B1833C991A15F39900D99E5E /* Supporting Files */,
+			);
+			path = Ribbons;
+			sourceTree = "<group>";
+		};
+		B1833C991A15F39900D99E5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1833C9A1A15F39900D99E5E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B15AA2691A0C9CEB00BEF900 /* Ribbon Reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15AA2891A0C9CEB00BEF900 /* Build configuration list for PBXNativeTarget "Ribbon Reminder" */;
+			buildPhases = (
+				B15AA2661A0C9CEB00BEF900 /* Sources */,
+				B15AA2671A0C9CEB00BEF900 /* Frameworks */,
+				B15AA2681A0C9CEB00BEF900 /* Resources */,
+				B1833C911A15DCE800D99E5E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1833CA01A15F39900D99E5E /* PBXTargetDependency */,
+			);
+			name = "Ribbon Reminder";
+			productName = "Ribbon Reminder";
+			productReference = B15AA26A1A0C9CEB00BEF900 /* Ribbon Reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B15AA27E1A0C9CEB00BEF900 /* Ribbon ReminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15AA28C1A0C9CEB00BEF900 /* Build configuration list for PBXNativeTarget "Ribbon ReminderTests" */;
+			buildPhases = (
+				B15AA27B1A0C9CEB00BEF900 /* Sources */,
+				B15AA27C1A0C9CEB00BEF900 /* Frameworks */,
+				B15AA27D1A0C9CEB00BEF900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B15AA2811A0C9CEB00BEF900 /* PBXTargetDependency */,
+			);
+			name = "Ribbon ReminderTests";
+			productName = "Ribbon ReminderTests";
+			productReference = B15AA27F1A0C9CEB00BEF900 /* Ribbon ReminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1833C951A15F39900D99E5E /* Ribbons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1833CA21A15F39900D99E5E /* Build configuration list for PBXNativeTarget "Ribbons" */;
+			buildPhases = (
+				B1833C921A15F39900D99E5E /* Sources */,
+				B1833C931A15F39900D99E5E /* Frameworks */,
+				B1833C941A15F39900D99E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ribbons;
+			productName = Ribbons;
+			productReference = B1833C961A15F39900D99E5E /* Ribbons.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15AA2621A0C9CEB00BEF900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "John Datserakis";
+				TargetAttributes = {
+					B15AA2691A0C9CEB00BEF900 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 37FPV67XZ3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B15AA27E1A0C9CEB00BEF900 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = B15AA2691A0C9CEB00BEF900;
+					};
+					B1833C951A15F39900D99E5E = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 37FPV67XZ3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B15AA2651A0C9CEB00BEF900 /* Build configuration list for PBXProject "Ribbon Reminder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15AA2611A0C9CEB00BEF900;
+			productRefGroup = B15AA26B1A0C9CEB00BEF900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B15AA2691A0C9CEB00BEF900 /* Ribbon Reminder */,
+				B15AA27E1A0C9CEB00BEF900 /* Ribbon ReminderTests */,
+				B1833C951A15F39900D99E5E /* Ribbons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B15AA2681A0C9CEB00BEF900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15AA2751A0C9CEB00BEF900 /* Main.storyboard in Resources */,
+				B1E63BCA1A32CCFC00FDA396 /* Images.xcassets in Resources */,
+				B1AA05C51A11EFC000B677BC /* WawaTC-Regular.otf in Resources */,
+				B1CC312E1A21BE5300734BD6 /* Launch Screen New.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15AA27D1A0C9CEB00BEF900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1833C941A15F39900D99E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1833C9E1A15F39900D99E5E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15AA2661A0C9CEB00BEF900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1833C791A148C4300D99E5E /* RibbonViewController.swift in Sources */,
+				B15AA2721A0C9CEB00BEF900 /* ViewController.swift in Sources */,
+				B15AA2701A0C9CEB00BEF900 /* AppDelegate.swift in Sources */,
+				B1D8F4FE1A0E01D1003D4C3C /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15AA27B1A0C9CEB00BEF900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15AA2861A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1833C921A15F39900D99E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1833C9C1A15F39900D99E5E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B15AA2811A0C9CEB00BEF900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B15AA2691A0C9CEB00BEF900 /* Ribbon Reminder */;
+			targetProxy = B15AA2801A0C9CEB00BEF900 /* PBXContainerItemProxy */;
+		};
+		B1833CA01A15F39900D99E5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1833C951A15F39900D99E5E /* Ribbons */;
+			targetProxy = B1833C9F1A15F39900D99E5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B15AA2731A0C9CEB00BEF900 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15AA2741A0C9CEB00BEF900 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B15AA2871A0C9CEB00BEF900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B15AA2881A0C9CEB00BEF900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B15AA28A1A0C9CEB00BEF900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ribbon Reminder/Ribbon Reminder.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Ribbon Reminder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B15AA28B1A0C9CEB00BEF900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ribbon Reminder/Ribbon Reminder.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Ribbon Reminder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B15AA28D1A0C9CEB00BEF900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ribbon ReminderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ribbon Reminder.app/Ribbon Reminder";
+			};
+			name = Debug;
+		};
+		B15AA28E1A0C9CEB00BEF900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ribbon ReminderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ribbon Reminder.app/Ribbon Reminder";
+			};
+			name = Release;
+		};
+		B1833CA31A15F39900D99E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Ribbons/Ribbons.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Ribbons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B1833CA41A15F39900D99E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Ribbons/Ribbons.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Ribbons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15AA2651A0C9CEB00BEF900 /* Build configuration list for PBXProject "Ribbon Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15AA2871A0C9CEB00BEF900 /* Debug */,
+				B15AA2881A0C9CEB00BEF900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15AA2891A0C9CEB00BEF900 /* Build configuration list for PBXNativeTarget "Ribbon Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15AA28A1A0C9CEB00BEF900 /* Debug */,
+				B15AA28B1A0C9CEB00BEF900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15AA28C1A0C9CEB00BEF900 /* Build configuration list for PBXNativeTarget "Ribbon ReminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15AA28D1A0C9CEB00BEF900 /* Debug */,
+				B15AA28E1A0C9CEB00BEF900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1833CA21A15F39900D99E5E /* Build configuration list for PBXNativeTarget "Ribbons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1833CA31A15F39900D99E5E /* Debug */,
+				B1833CA41A15F39900D99E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15AA2621A0C9CEB00BEF900 /* Project object */;
+}
