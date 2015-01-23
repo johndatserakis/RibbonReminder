@@ -11,6 +11,7 @@
 		B15AA2721A0C9CEB00BEF900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA2711A0C9CEB00BEF900 /* ViewController.swift */; };
 		B15AA2751A0C9CEB00BEF900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15AA2731A0C9CEB00BEF900 /* Main.storyboard */; };
 		B15AA2861A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15AA2851A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift */; };
+		B16425261A72B69700F0DFC6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B16425251A72B69700F0DFC6 /* LICENSE */; };
 		B1833C791A148C4300D99E5E /* RibbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1833C781A148C4300D99E5E /* RibbonViewController.swift */; };
 		B1833C971A15F39900D99E5E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1833C821A15DCE800D99E5E /* NotificationCenter.framework */; };
 		B1833C9C1A15F39900D99E5E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1833C9B1A15F39900D99E5E /* TodayViewController.swift */; };
@@ -62,6 +63,7 @@
 		B15AA27F1A0C9CEB00BEF900 /* Ribbon ReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ribbon ReminderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15AA2841A0C9CEB00BEF900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B15AA2851A0C9CEB00BEF900 /* Ribbon_ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ribbon_ReminderTests.swift; sourceTree = "<group>"; };
+		B16425251A72B69700F0DFC6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B1833C781A148C4300D99E5E /* RibbonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RibbonViewController.swift; sourceTree = "<group>"; };
 		B1833C821A15DCE800D99E5E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		B1833C961A15F39900D99E5E /* Ribbons.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Ribbons.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 		B15AA26D1A0C9CEB00BEF900 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B16425251A72B69700F0DFC6 /* LICENSE */,
 				B1AA05C41A11EFC000B677BC /* WawaTC-Regular.otf */,
 				B15AA26E1A0C9CEB00BEF900 /* Info.plist */,
 			);
@@ -311,6 +314,7 @@
 				B1E63BCA1A32CCFC00FDA396 /* Images.xcassets in Resources */,
 				B1AA05C51A11EFC000B677BC /* WawaTC-Regular.otf in Resources */,
 				B1CC312E1A21BE5300734BD6 /* Launch Screen New.xib in Resources */,
+				B16425261A72B69700F0DFC6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
